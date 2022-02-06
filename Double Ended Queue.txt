@@ -1,0 +1,59 @@
+/*Insertion through rear end*/
+
+if(rear=MAX-1)
+{
+    print queue is full 
+    exit
+}
+else
+{
+    rear=rear+1;
+    a[rear]=item;
+    if(front==-1)
+        front=0;
+}
+
+/*Insertion at front*/
+
+if(front<=0)
+{
+    print cannot add item at front end
+    exit
+}
+else
+{
+    front=front-1;
+    a[front]=item;
+}
+
+/*Deletion from front*/
+
+if(front==-1)
+{
+    print queue is empty 
+    exit
+}
+else
+{
+    item=a[front];
+    if(front==rear)
+        front=rear=-1;
+    else
+        front=front+1;
+}
+
+/*Deletion from rear*/
+
+if(rear==-1)
+{
+    print cannot delete element
+    exit
+}
+else
+{
+    item=a[rear];
+    if(front==rear)
+        front=rear=-1;
+    else
+        rear=rear-1;
+}

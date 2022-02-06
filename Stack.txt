@@ -1,0 +1,25 @@
+/*Push Operation*/
+
+if(top==MAX-1)
+{
+    print stack full
+    exit
+}
+else
+{
+    top=top+1;
+    a[top]=item;
+}
+
+/*Pop Operation*/
+
+if(top==-1)
+{
+    print stack empty
+    exit
+}
+else
+{
+    a[top]=item;
+    top=top-1;
+}

@@ -1,0 +1,30 @@
+/*Insertion*/
+
+if(front=-1&&rear=-1)
+{
+    front=rear=0;
+    a[rear]=item;
+}
+else if((rear+1%n)==front)
+    print queue is full
+else
+{
+    rear=(rear+1)%n;
+    a[rear]=item;
+}
+
+/*Deletion*/
+
+if(front==-1)
+{
+    print queue is empty
+    exit
+}
+else
+{
+    item=a[front];
+    if(front==rear)
+        front=rear=-1;
+    else
+        front=(front+1)%n;
+}
